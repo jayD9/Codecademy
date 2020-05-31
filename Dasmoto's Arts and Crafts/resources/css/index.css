@@ -1,0 +1,32 @@
+.heading{
+
+}
+
+.mainHeadin{
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    background-image: url('/images/frames.jpg');
+}
+
+.heading{
+    font-width: bold;
+    fornt-color: white;
+    font-size: 32px;
+}
+
+.highlighted{
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}
+
+.content{
+    font-family: Helvetica;
+}
+
+.subHading{
+    font-weight: bold;
+    font-size: 20px;
+}
