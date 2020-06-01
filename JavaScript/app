@@ -41,18 +41,3 @@ console.log(Math.ceil(43.2));
 
 console.log(Number.isInteger(2017));
 
-/* Variables in Js*/
-
-var favoriteFood = 'pizza'
-var numOfSlices = 8
-console.log(favoriteFood);
-console.log(numOfSlices);
-
-let changeMe = true;
-changeMe = false;
-console.log(changeMe);
-
-const entree = 'Enchiladas';
-console.log(entree);
-//entree = 'Tacos'
-//const testing;
