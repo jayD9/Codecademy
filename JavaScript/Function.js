@@ -33,6 +33,8 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
     console.log(`Remember to buy ${item3}`);
 }
 
+
+//---------------------------------------------------------------------
 // return
 
 function rectangleArea(width, height) {
@@ -50,6 +52,7 @@ const numOfMonitors = monitorCount(5,4);
 
 console.log(numOfMonitors);
 
+//---------------------------------------------------------------------
 
 // call function from another function
 function monitorCount(rows, columns) {
@@ -63,7 +66,7 @@ function costOfMonitors(rows, columns){
 const totalCost = costOfMonitors(5,4);
 console.log(totalCost);
 
-
+//---------------------------------------------------------------------
 
 // Function Expression
 
@@ -77,3 +80,29 @@ const plantNeedsWater = function(day){
 
 console.log(plantNeedsWater('Tuesday')); // false
 console.log(plantNeedsWater); // [Function: plantNeedsWater]
+//---------------------------------------------------------------------
+
+// Arrow function (instead of function we can write =>)
+
+const plantNeedsWater = (day) => {
+    if (day === 'Wednesday') {
+        return true;
+    } else {
+        return false;
+    }
+};
+//---------------------------------------------------------------------
+
+// Concise function only for single parameter
+const squareNum = (num) => {
+    return num * num;
+};
+
+//can also written as
+const squareNum = num => num * num;
+
+/*The parentheses around num have been removed, since it has a single parameter.
+The curly braces { } have been removed since the function consists of a single-line block.
+The return keyword has been removed since the function consists of a single-line block.*/
+
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
