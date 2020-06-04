@@ -167,5 +167,131 @@ console.log(numImaginaryFriends(18)) // Should print 6
 
 
 //-------------------------------------------------------
+
+// Write your function here:
+function sillySentence(str1, str2, str3){
+    return `I am so ${str1} because I ${str2} coding! Time to write some more awesome ${str3}!`
+}
+
+// Uncomment the line below when you're ready to try out your function
+// console.log(sillySentence('excited', 'love', 'functions'))
+
+// We encourage you to add more function calls of your own to test your code!
+
+
 //-------------------------------------------------------
+
+// Write your function here:
+function howOld(age, year){
+    const currentAge = age;
+    const theCurrentYear = 2020;
+    const yearDiff = year - theCurrentYear;
+    const newAge = currentAge + yearDiff;
+
+    if(newAge >= currentAge){
+        return `You will be ${newAge} in the year ${year}`
+    }else if(newAge >= 0){
+        return `You were ${newAge} in the year ${year}`
+    }else {
+        var x = theCurrentYear - year - age;
+        return `The year ${year} was ${x} years before you were born`
+    }
+
+}
+
+console.log(howOld(26,1984));
+// Once your function is written, write function calls to test your code!
+
+
+//-------------------------------------------------------
+
+const whatRelation = percentSharedDNA => {
+    if (percentSharedDNA === 100) {
+        return 'You are likely identical twins.'
+    }else if (percentSharedDNA > 34 && percentSharedDNA < 100) {
+        return 'You are likely parent and child or full siblings.'
+    }else if (percentSharedDNA > 13 && percentSharedDNA < 35) {
+        return 'You are likely grandparent and grandchild, aunt/uncle and niece/nephew, or half siblings.'
+    }else if (percentSharedDNA > 5 && percentSharedDNA < 14) {
+        return 'You are likely 1st cousins.'
+    }else if (percentSharedDNA > 2 && percentSharedDNA < 6) {
+        return 'You are likely 2nd cousins.'
+    }else if (percentSharedDNA > 0 && percentSharedDNA < 3) {
+        return 'You are likely 3rd cousins'
+    }else {
+        return 'You are likely not related.'
+    }
+
+}
+
+console.log(whatRelation(34))
+// Should print 'You are likely grandparent and grandchild, aunt/uncle and niece/nephew, or half siblings.'
+
+console.log(whatRelation(3))
+// Should print 'You are likely 2nd cousins.'
+
+
+//-------------------------------------------------------
+
+// Write your function here:
+function tipCalculator(quality, total){
+    switch(quality){
+        case 'bad':
+            return total/ 100 * 5;
+            break;
+        case 'ok':
+            return total/ 100 * 15;
+            break;
+        case 'good':
+            return total/ 100 * 20;
+            break;
+        case 'excellent':
+            return total/ 100 * 30;
+            break;
+        default:
+            return total/ 100 * 18;
+            break;
+    }
+}
+
+// Uncomment the line below when you're ready to try out your function
+console.log(tipCalculator('good', 100)) //should return 20
+
+// We encourage you to add more function calls of your own to test your code!
+
+
+//-------------------------------------------------------
+
+// Write your function here:
+function toEmoticon(str1){
+    switch(str1){
+        case 'shrug':
+            return '|_{"}_|';
+            break;
+        case 'smiley face':
+            return ':)';
+            break;
+        case 'frowny face':
+            return ':(';
+            break;
+        case 'winky face':
+            return ';)';
+            break;
+        case 'heart':
+            return '<3';
+            break;
+        default:
+            return '|_(* ~ *)_|';
+            break;
+
+    }
+}
+
+
+// Uncomment the line below when you're ready to try out your function
+console.log(toEmoticon("whatever"))
+// Should print  '|_(* ~ *)_|'
+
+// We encourage you to add more function calls of your own to test your code!
+
 //-------------------------------------------------------
