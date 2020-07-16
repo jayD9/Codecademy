@@ -34,3 +34,32 @@ console.log(lightWaves) // refrence error
 //
 //
 
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+let stars = 'North Star';
+
+const callMyNightSky = () => {
+    stars = 'Sirius'
+    return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+};
+
+console.log(callMyNightSky());
+console.log(stars);
+
+//You’ll notice that the global variable stars was reassigned to 'Sirius'.
+
+const logVisibleLightWaves = () => {
+    let lightWaves = 'Moonlight';
+    let region = 'The Arctic';
+    console.log()
+    if(region==='The Arctic'){
+        let lightWaves = 'Northern Lights'
+        console.log(lightWaves)
+    }
+    console.log(lightWaves);
+};
+
+logVisibleLightWaves();
+
+//
+
