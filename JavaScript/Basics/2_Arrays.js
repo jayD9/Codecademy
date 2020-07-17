@@ -40,3 +40,31 @@ console.log(utensils)
 
 utensils = ['Spoon']
 console.log(utensils)
+
+//
+
+const objectives = ['Learn a new languages', 'Read 52 books', 'Run a marathon'];
+
+
+console.log(objectives.length)
+
+//
+
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+
+chores.push('First')
+chores.push('second')
+
+console.log(chores)
+
+
+//
+
+
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+
+
+chores.pop()
+chores.pop()
+
+console.log(chores)
